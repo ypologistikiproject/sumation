@@ -1,0 +1,17 @@
+//-------------------stirlings2_func---------------------------
+//Konstantinos Ypsilantis
+//mazevei tous sintelestes analoga me to idos polionimou 
+
+stirlings_func(a):= {
+
+  local k;
+  local b:=[];
+
+  for(k:=0; k<=a; k++)
+  {
+    b := append(b,stirlings2(a,k));
+    
+  };  
+  return b;
+
+}:;
