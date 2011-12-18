@@ -1,3 +1,32 @@
+//---------------------------stirlings2--------------------------------
+//Konstantinos Ypsilantis
+// I sinartisi upologizei tous sintelestes stirlings.
+
+stirlings2(z,y):=
+{
+  local str_table,n,k;
+
+  str_table:=matrix(20,20,0);//dimiourgia pinaka 20x20
+
+  for( n:=1; n<20; n++ ) //arxikopoisi tou pinaka
+  {
+    str_table[n,1]:=1;
+    str_table[n,n]:=1;
+    str_table[n,0]:=0;
+    str_table[0,0]:=1;
+  }
+
+  for(n:=1; n<20; n++)
+  {
+    for(k:=1; k<n; k++)
+    {
+      str_table[n,k] := str_table[n-1,k-1] + k*str_table[n-1,k] //upologismos kathe stixiou stirling
+    }
+  }
+  return str_table[z,y]; 
+  
+}:;
+
 //-------------------stirlings2_func---------------------------
 //Konstantinos Ypsilantis
 //mazevei tous sintelestes analoga me to idos polionimou 
