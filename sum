@@ -1,5 +1,8 @@
 //---------------------------stirlings2--------------------------------
+//Stringlis Konstantinos
+//Tsinopoulou Despoina
 //Konstantinos Ypsilantis
+
 // I sinartisi upologizei tous sintelestes stirlings.
 
 stirlings2(z,y):=
@@ -28,7 +31,10 @@ stirlings2(z,y):=
 }:;
 
 //-------------------stirlings2_func---------------------------
+//Stringlis Konstantinos
+//Tsinopoulou Despoina
 //Konstantinos Ypsilantis
+
 //mazevei tous sintelestes analoga me to idos polionimou 
 
 stirlings_func(a):= {
