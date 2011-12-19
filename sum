@@ -101,15 +101,23 @@ local q,values,leng,leng2,z,j,s,resul,resul1,minu;
   resul:=0;
   minu:=1;
 
-  for(j:=0; j<=leng; j++)  
+  for(j:=0; j<leng; j++)  
   {
     if( values[j]!=0 ) 
     {
       s:=stirlings_func(leng-j-1);   //klisi tis stirlings gia na vrethei o sintelestis   
-  
-     //upolipete to for-loop pou upologizei to athroisma
+      
+      leng2:=length(s);
+      minu:=leng2;
       
     
+      for(z:=0;z<leng2-1;z++)  
+      {
+        resul1:=( (factorialPower((leng2-z),x)) ); //klisi tis factorialPower
+        resul1:=resul1/minu;
+        resul:=resul + resul1; 
+        minu--;
+      }
      
     }
   }   
