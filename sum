@@ -67,3 +67,18 @@ Pochhammer(m):=
 print(c);
 return(c);
 }:;
+
+//-----------------------factorialPower------------------------
+
+factorialPower(a,n):=
+{  
+  local j,c;  
+  c:=x;
+
+  for (j:=1; j<a; j:=j+1)
+  {
+    c:=c*(x-j);
+  }
+
+  return(c);
+}:;
