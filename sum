@@ -82,3 +82,38 @@ factorialPower(a,n):=
 
   return(c);
 }:;
+
+//----------------------summation-----------------------------
+//i sinartisi pou upologizei to athroisma.
+
+summation(poly(k),k):={
+
+ 
+local q,values,leng,leng2,z,j,s,resul,resul1,minu;
+
+
+
+
+  q:=expand(poly(k));//anoigoume to polionimo
+  values:=coeffs(q);//kratame tous sintelestes tou polionimou
+  leng:=length(values);
+
+  resul:=0;
+  minu:=1;
+
+  for(j:=0; j<=leng; j++)  
+  {
+    if( values[j]!=0 ) 
+    {
+      s:=stirlings_func(leng-j-1);   //klisi tis stirlings gia na vrethei o sintelestis   
+  
+     //upolipete to for-loop pou upologizei to athroisma
+      
+    
+     
+    }
+  }   
+ 
+  print("The Result=",resul);
+ return(resul);  
+}:;
