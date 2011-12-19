@@ -1,6 +1,6 @@
 //---------------------------stirlings2--------------------------------
-//Stringlis Konstantinos
-//Tsinopoulou Despoina
+//Konstantinos Striglis 
+//Despoina Tsinopoulou
 //Konstantinos Ypsilantis
 
 // I sinartisi upologizei tous sintelestes stirlings.
@@ -31,9 +31,7 @@ stirlings2(z,y):=
 }:;
 
 //-------------------stirlings2_func---------------------------
-//Stringlis Konstantinos
-//Tsinopoulou Despoina
-//Konstantinos Ypsilantis
+
 
 //mazevei tous sintelestes analoga me to idos polionimou 
 
@@ -49,4 +47,23 @@ stirlings_func(a):= {
   };  
   return b;
 
+}:;
+
+
+
+
+//---------------------pochhammer---------------------------------
+//i antistoixi pochhammer tou mathematica
+
+Pochhammer(m):=
+{  
+  local j,c;  
+  c:=x;
+
+  for (j:=1; j<m; j:=j+1)
+    {
+     c:=c*(x+j);
+    }
+print(c);
+return(c);
 }:;
